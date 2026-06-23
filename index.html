@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+     <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" 
+/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+<title>Mariam Oduye — Fullstack Developer & Data Analyst</title>
+</head>
+<body>
+
+<header>
+  <nav>
+    <div class="logo">Mariam Oduye</div>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#data">Data</a></li>
+      <!--<li><a href="#experience">Experience</a></li>-->
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button id="theme-toggle">🌙 Dark</button>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg">
+    <span></span><span></span><span></span>
+  </div>
+  <div class="container">
+    <p class="location">📍 Lagos, Nigeria &nbsp;|&nbsp; ✉️ oduyemariam@gmail.com</p>
+    <h1>Mariam Oduye</h1>
+    <p class="tagline">Fullstack Developer & Data Analyst — building end-to-end web apps and turning raw data into clear insights.</p>
+    <div class="stack">
+      <span>JavaScript</span>
+      <span>React</span>
+      <span>HTML</span>
+      <span>CSS</span>
+      <span>Node.js</span>
+      <span>Python</span>
+      <span>MySQL</span>
+      <span>MongoDB</span>
+      <span>Pandas</span>
+      <span>Power BI</span>
+      <span>Express.js</span>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="container">
+    <h2>About <span>Me</span></h2>
+    <p class="about-text">
+       A frontend developer with a background in Computer Science. I specialize in building responsive and user-focused interfaces. 
+       Driven by a desire to build complete digital solutions.
+       Though currently expanding into backend development with Node.js, Python, and SQL, I have a deep interest in data analysis, using POWER BI to visualize data for meaningful interpretation. </p>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="container">
+    <h2>Featured <span>Projects</span></h2>
+
+    <div class="filters">
+      <button class="active" data-filter="all">All</button>
+      <button data-filter="fullstack">Full-Stack</button>
+      <button data-filter="data">Data</button>
+      <button data-filter="frontend">Frontend</button>
+    </div>
+
+    <div class="projects-grid">
+
+       <div class="project-card" data-category="fullstack">
+        <img class="images" src="/img/twitter.png"/>
+        <h3>Twitter Clone</h3>
+        <p>A social media application where users can interact in real time.</p>
+        <div class="tags"><span>MongoDB</span><span>Express.js</span><span>React</span><span>Node.js</span></div>
+        <li>View - <span><a href="https://twitter-clone-8rlw.onrender.com/" target="_blank">www.twitter-clone.com</a></span></li>
+
+       
+      </div>
+
+      <div class="project-card" data-category="frontend">
+        <img class="images" src="/img/lasswa.png"/>
+        <h3>Login Page</h3>
+        <p>A responsive interface featuring login and registration forms.</p>
+        <div class="tags"><span>React</span><span>Tailwind</span><span>HTML/CSS</span><span>JavaScript</span></div>
+        <li>View - <span><a href="https://laswwa-wmdmc.vercel.app/login" target="_blank">www.Login.com</a></span></li>
+
+      </div>
+
+      <div class="project-card" data-category="data">
+        <img class="images" src="/img/Screenshot 2026-06-13 232346.png" alt="graph showing adventure works data"/>        
+        <h3>Adventure Works Sales Analysis</h3>
+        <p>Adventure Works sales analysis over product category, region and date</p>
+        <div class="tags"><span>Python</span><span>Pandas</span><span>Power BI</span></div>
+        <li><a href="data.html">View</a></li>
+      </div>
+
+     
+      <div class="project-card" data-category="fullstack">
+        <img src="/img/store.png" class="images"/>
+        <h3>Product Store</h3>
+        <p>An e-commerce application where users can create, view, update, and delete products.</p>
+        <div class="tags"><span>MongoDB</span><span>Express.js</span><span>React</span><span>Node.js</span></div>
+        <li>View - <span><a href=" https://product-store-wa7o.onrender.com/" target="_blank">www.productStore.com</a></span></li>
+
+       
+      </div>
+
+
+      <div class="project-card" data-category="frontend">
+        <img class="images" src="https://i.postimg.cc/zGz4M7vx/3138804-middle.png" alt=""/>
+        <h3>Speech detection</h3>
+        <p>A speech-to-text web application that captures audio from a user's microphone into text in real time.</p>
+        <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+        <li>View - <span><a href=" https://maemary.github.io/Speech-Detection/" target="_blank">www.domain.com</a></span></li>
+
+      </div>
+
+      <div class="project-card" data-category="frontend">
+        <img class="images" src="/img/whack.png"/>
+        <h3>Whack-A-Mole</h3>
+        <p>Click the moles as they pop up to score points. Built with vanilla JavaScript for DOM manipulation and game logic.</p>
+        <div class="tags"><span>JavaScript</span><span>HTML</span><span>CSS</span></div>
+         <li>View - <span><a href="https://maemary.github.io/Whack-A-Mole/" target="_blank">www.Whack-A-Mole.com</a></span></li>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- DATA SECTION -->
+<section id="data">
+  <div class="container">
+    <h2>Data <span>Analysis</span></h2>
+    <div class="chart-grid">
+<div class="chart-card">
+      <h3>Adventure Work Sales</h3>
+      <p>Sales report built using Power BI</p>
+        <img src="/img/Screenshot (13).png" alt=""/>
+    </div>
+    <div class="chart-card">
+      <h3>Adventure Works Purchases</h3>
+      <p>Charts showing adventure works purchases</p>
+        <img src="/img/Screenshot 2026-06-12 202627.png" alt=""/>
+    </div>
+    </div>
+    
+  </div>
+</section>
+
+
+
+<!-- CONTACT -->
+<section id="contact" class="contact">
+  <div class="container">
+    <h2>Get In <span>Touch</span></h2>
+    <p class="about-text">Open to fullstack and data analyst roles, freelance work, or collaborations. Reach out below.</p>
+    <div class="links">
+      <a href="mailto:oduyemariam@gmail.com"><i class="uil uil-envelope-edit contact-card-icon"></i>  oduyemariam@gmail.com</a>
+      <a href="https://www.linkedin.com/in/mariam-oduye-830911239/" target="_blank"> <i class="uil uil-linkedin"></i>  LinkedIn
+      </a>
+      <a href="https://github.com/Maemary" target="_blank"><i class="uil uil-github"></i>  GitHub</a>
+          
+      <a href="https://www.freecodecamp.org/maemary12" target="_blank"><i class="fab fa-free-code-camp fa-fw"></i>  FreeCodeCamp
+             </a>
+
+       
+    </div>
+  </div>
+</section>
+
+<footer>
+ © 2026 Mariam Oduye. Designed and developed with HTML, CSS, and JavaScript.
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.0/chart.umd.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
