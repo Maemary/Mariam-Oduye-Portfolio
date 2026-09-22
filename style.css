@@ -246,4 +246,11 @@
     .project-card h3{font-size:.7rem;margin-bottom:2px;line-height:1.2;}
     .project-card p, .project-card .tags{display:none;}
     .project-card li{font-size:.6rem;list-style:none;}
+
+    /* DATA ANALYSIS: 3 per row on mobile */
+    .chart-grid{grid-template-columns:repeat(3,1fr);gap:8px;max-width:100%;}
+    .chart-card{padding:8px;max-width:none;border-radius:10px;}
+    .chart-card .images{height:60px;border-radius:6px;}
+    .chart-card h3{font-size:.7rem;margin-bottom:2px;line-height:1.2;}
+    .chart-card p{display:none;}
   }
