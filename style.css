@@ -238,4 +238,12 @@
       display:block;padding:14px 24px;border-top:1px solid var(--border);
       font-size:1rem;
     }
+
+    /* PROJECTS: 3 per row on mobile */
+    .projects-grid{grid-template-columns:repeat(3,1fr);gap:8px;}
+    .project-card{padding:8px;border-radius:10px;}
+    .project-card .images{height:60px;border-radius:6px;}
+    .project-card h3{font-size:.7rem;margin-bottom:2px;line-height:1.2;}
+    .project-card p, .project-card .tags{display:none;}
+    .project-card li{font-size:.6rem;list-style:none;}
   }
