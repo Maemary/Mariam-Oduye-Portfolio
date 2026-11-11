@@ -8,7 +8,7 @@
     --card:#1b1f24;
     --border:#2a2f36;
     --radius:14px;
-    --maxw:1000px;
+    --maxw:1180px;
   }
   *{margin:0;padding:0;box-sizing:border-box;}
   html{scroll-behavior:smooth;}
@@ -162,10 +162,17 @@
   }
  
   /* PROJECTS */
-  .projects-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:24px;}
+  .projects-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:24px;}
   .project-card{
     background:var(--card);border:1px solid var(--border);border-radius:var(--radius);
-    padding:24px;transition:transform .25s,border-color .25s;
+    padding:18px;transition:transform .25s,border-color .25s;
+    display:flex;flex-direction:column;
+  }
+  .project-card .images{margin-bottom:14px;}
+  .project-card .tags{margin-bottom:10px;}
+  .project-link{
+    margin-top:auto;align-self:flex-start;
+    font-weight:600;font-size:.9rem;
   }
   .project-card:hover{transform:translateY(-6px);border-color:var(--accent);}
   .project-card h3{margin-bottom:8px;font-size:1.2rem;}
@@ -178,18 +185,20 @@
   .project-card.hidden{display:none;}
  
   /* DATA / CHART SECTION */
-  .chart-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:24px;}
+  .chart-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:24px;}
 
   .chart-card{
     background:var(--card);border:1px solid var(--border);border-radius:var(--radius);
-    padding-left:24px;padding-bottom:2px;max-width:700px;margin:0 auto;
+    padding:18px;width:100%;
   }
   .chart-card h3{margin-bottom:6px;}
   .chart-card img, .images{
-     width: 100%;          /* or fixed px/% */
-  height: 43%;         /* maintain aspect ratio */
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 10;  /* every card image is the same shape */
   object-fit: cover;    /* cover, contain, fill - how it fits its box */
-  object-position: center; /* which part shows when cropped */
+  object-position: top;   /* show the top of each screenshot */
   border-radius: 12px;  /* rounded corners */
   border: 1px solid var(--border);
   box-shadow: 0 8px 24px rgba(0,0,0,0.4);
@@ -197,7 +206,7 @@
   opacity: 0.9;
   transition: transform 0.3s, filter 0.3s; /* for hover effects */
   }
-  .chart-card p{color:var(--muted);font-size:.5rem;margin-bottom:10px;}
+  .chart-card p{color:var(--muted);font-size:.9rem;margin-bottom:12px;}
  
   /* EXPERIENCE */
   .timeline{max-width:700px;margin:0 auto;}
@@ -245,12 +254,13 @@
     .project-card .images{height:60px;border-radius:6px;}
     .project-card h3{font-size:.7rem;margin-bottom:2px;line-height:1.2;}
     .project-card p, .project-card .tags{display:none;}
-    .project-card li{font-size:.6rem;list-style:none;}
+    .project-card .images{margin-bottom:6px;aspect-ratio:auto;}
+    .project-link{font-size:.6rem;}
 
     /* DATA ANALYSIS: 3 per row on mobile */
     .chart-grid{grid-template-columns:repeat(3,1fr);gap:8px;max-width:100%;}
     .chart-card{padding:8px;max-width:none;border-radius:10px;}
-    .chart-card .images{height:60px;border-radius:6px;}
+    .chart-card img{height:60px;aspect-ratio:auto;border-radius:6px;}
     .chart-card h3{font-size:.7rem;margin-bottom:2px;line-height:1.2;}
     .chart-card p{display:none;}
   }

@@ -40,25 +40,3 @@
       });
     });
   });
-
-  // Sample chart (Chart.js)
-  const ctx = document.getElementById('sampleChart');
-  new Chart(ctx, {
-    type: 'bar',
-    data: {
-      labels: ['Jan','Feb','Mar','Apr','May','Jun'],
-      datasets: [{
-        label: 'Revenue ($)',
-        data: [1200, 1900, 1500, 2400, 2100, 3000],
-        backgroundColor: '#6ee7b7'
-      }]
-    },
-    options: {
-      responsive: true,
-      plugins: { legend: { display: false } },
-      scales: {
-        x: { ticks: { color: '#9aa0a6' }, grid: { color: '#2a2f36' } },
-        y: { ticks: { color: '#9aa0a6' }, grid: { color: '#2a2f36' } }
-      }
-    }
-  });

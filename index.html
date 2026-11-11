@@ -1,16 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <link rel="stylesheet" href="style.css"/>
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
-     <link
-  rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" 
-/>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+<link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
 <title>Mariam Oduye — Fullstack Developer & Data Analyst</title>
 </head>
 <body>
@@ -22,7 +17,6 @@
       <li><a href="#about">About</a></li>
       <li><a href="#projects">Projects</a></li>
       <li><a href="#data">Data</a></li>
-      <!--<li><a href="#experience">Experience</a></li>-->
       <li><a href="#contact">Contact</a></li>
     </ul>
     <div class="nav-actions">
@@ -45,16 +39,19 @@
     <p class="tagline">Fullstack Developer & Data Analyst — building end-to-end web apps and turning raw data into clear insights.</p>
     <div class="stack">
       <span>JavaScript</span>
+      <span>TypeScript</span>
       <span>React</span>
-      <span>HTML</span>
-      <span>CSS</span>
+      <span>Next.js</span>
       <span>Node.js</span>
-      <span>Python</span>
-      <span>MySQL</span>
+      <span>Express.js</span>
+      <span>Tailwind CSS</span>
+      <span>Supabase</span>
+      <span>Firebase</span>
       <span>MongoDB</span>
+      <span>MySQL</span>
+      <span>Python</span>
       <span>Pandas</span>
       <span>Power BI</span>
-      <span>Express.js</span>
     </div>
   </div>
 </section>
@@ -64,9 +61,11 @@
   <div class="container">
     <h2>About <span>Me</span></h2>
     <p class="about-text">
-       A web developer with a background in Computer Science. I specialize in building responsive and user-focused interfaces. 
-       Driven by a desire to build complete digital solutions.
-       Though currently expanding into backend development with Node.js, Python, and SQL, I have a deep interest in data analysis, using POWER BI to visualize data for meaningful interpretation. </p>
+      A fullstack web developer with a background in Computer Science. I build responsive, user-focused
+      apps from the interface to the database, with React, Next.js and TypeScript on the front end and
+      Node.js, Supabase, Firebase and MongoDB behind them. I also enjoy data analysis, using Python and
+      Power BI to turn raw data into clear, meaningful insights.
+    </p>
   </div>
 </section>
 
@@ -85,71 +84,76 @@
 
     <div class="projects-grid">
 
-      <div class="project-card" data-category="backend">
-  <img class="images" src="/img/achii.png" alt="ACHII Website" />
-  <h3>ACHII Platform</h3>
-  <p>A climate and health platform for the African Climate & Health
-    Innovation Initiative(ACHII).
-  </p>
-  <div class="tags"><span>Next.js</span><span>React</span><span>Tailwind CSS</span><span>TypeScript</span></div>
-  <li>View - <span><a href="https://achii.co" target="_blank">www.achii.co </a></span></li>
-</div>
-
-       <div class="project-card" data-category="fullstack">
-        <img class="images" src="/img/twitter.png"/>
-        <h3>Twitter Clone</h3>
-        <p>A social media application where users can interact in real time.</p>
-        <div class="tags"><span>MongoDB</span><span>Express.js</span><span>React</span><span>Node.js</span></div>
-        <li>View - <span><a href="https://twitter-clone-frontend-alpha-six.vercel.app/" target="_blank">www.twitter-clone.com</a></span></li>
-
-       
+      <div class="project-card" data-category="fullstack">
+        <img class="images" src="img/popnote.png" alt="Popnote home page showing trending movies" />
+        <h3>Popnote</h3>
+        <p>A watchlist for movies, series and anime: browse by genre, A–Z or country, see trailers, cast and where each title is streaming in Nigeria, and save titles with a note on why you want to watch them.</p>
+        <div class="tags"><span>React</span><span>TypeScript</span><span>Firebase</span><span>TMDB API</span></div>
+        <a class="project-link" href="https://pop-note.vercel.app/" target="_blank" rel="noreferrer">Live site ↗</a>
       </div>
 
-      <div class="project-card" data-category="frontend">
-        <img class="images" src="/img/lasswa.png"/>
-        <h3>Login Page</h3>
-        <p>A responsive interface featuring login and registration forms.</p>
-        <div class="tags"><span>React</span><span>Tailwind</span><span>HTML/CSS</span><span>JavaScript</span></div>
-        <li>View - <span><a href="https://laswwa-wmdmc.vercel.app/login" target="_blank">www.Login.com</a></span></li>
+      <div class="project-card" data-category="fullstack">
+        <img class="images" src="img/meter-tracker.png" alt="Meter Tracker sign-up page" />
+        <h3>Meter Tracker</h3>
+        <p>Tracks prepaid electricity meters across Nigeria: log readings and recharges to see daily usage, spot sudden drains on a chart, and share one meter with your household.</p>
+        <div class="tags"><span>React</span><span>TypeScript</span><span>Supabase</span><span>Recharts</span></div>
+        <a class="project-link" href="https://meter-tracker-rosy.vercel.app/" target="_blank" rel="noreferrer">Live site ↗</a>
+      </div>
 
+      <div class="project-card" data-category="fullstack">
+        <img class="images" src="img/achii.png" alt="ACHII website" />
+        <h3>ACHII Platform</h3>
+        <p>The website of the Africa Climate and Health Innovation Institute (ACHII): training webinars, a resource bank, a blog, and sign-ups with automatic welcome emails.</p>
+        <div class="tags"><span>Next.js</span><span>TypeScript</span><span>Tailwind CSS</span><span>Supabase</span></div>
+        <a class="project-link" href="https://achii.co" target="_blank" rel="noreferrer">Live site ↗</a>
+      </div>
+
+      <div class="project-card" data-category="fullstack">
+        <img class="images" src="img/twitter.png" alt="Twitter clone feed" />
+        <h3>Twitter Clone</h3>
+        <p>A social media application where users can post and interact in real time.</p>
+        <div class="tags"><span>MongoDB</span><span>Express.js</span><span>React</span><span>Node.js</span></div>
+        <a class="project-link" href="https://twitter-clone-frontend-alpha-six.vercel.app/" target="_blank" rel="noreferrer">Live site ↗</a>
+      </div>
+
+      <div class="project-card" data-category="fullstack">
+        <img class="images" src="img/store.png" alt="Product store page" />
+        <h3>Product Store</h3>
+        <p>An e-commerce application where users can create, view, update and delete products.</p>
+        <div class="tags"><span>MongoDB</span><span>Express.js</span><span>React</span><span>Node.js</span></div>
+        <a class="project-link" href="https://product-store-wa7o.onrender.com/" target="_blank" rel="noreferrer">Live site ↗</a>
       </div>
 
       <div class="project-card" data-category="data">
-        <img class="images" src="/img/Screenshot 2026-06-13 232346.png" alt="graph showing adventure works data"/>        
+        <img class="images" src="img/Screenshot 2026-06-13 232346.png" alt="Graph of Adventure Works sales data"/>
         <h3>Adventure Works Sales Analysis</h3>
-        <p>Adventure Works sales analysis over product category, region and date</p>
+        <p>Adventure Works sales analysed by product category, region and date.</p>
         <div class="tags"><span>Python</span><span>Pandas</span><span>Power BI</span></div>
-        <li><a href="data.html">View</a></li>
+        <a class="project-link" href="#data">See the charts ↓</a>
       </div>
-
-     
-      <div class="project-card" data-category="fullstack">
-        <img src="/img/store.png" class="images"/>
-        <h3>Product Store</h3>
-        <p>An e-commerce application where users can create, view, update, and delete products.</p>
-        <div class="tags"><span>MongoDB</span><span>Express.js</span><span>React</span><span>Node.js</span></div>
-        <li>View - <span><a href=" https://product-store-wa7o.onrender.com/" target="_blank">www.productStore.com</a></span></li>
-
-       
-      </div>
-
 
       <div class="project-card" data-category="frontend">
-        <img class="images" src="https://i.postimg.cc/zGz4M7vx/3138804-middle.png" alt=""/>
-        <h3>Speech detection</h3>
-        <p>A speech-to-text web application that captures audio from a user's microphone into text in real time.</p>
+        <img class="images" src="img/lasswa.png" alt="Login page"/>
+        <h3>Login Page</h3>
+        <p>A responsive interface with login and registration forms.</p>
+        <div class="tags"><span>React</span><span>Tailwind</span><span>HTML/CSS</span><span>JavaScript</span></div>
+        <a class="project-link" href="https://laswwa-wmdmc.vercel.app/login" target="_blank" rel="noreferrer">Live site ↗</a>
+      </div>
+
+      <div class="project-card" data-category="frontend">
+        <img class="images" src="https://i.postimg.cc/zGz4M7vx/3138804-middle.png" alt="Microphone illustration"/>
+        <h3>Speech Detection</h3>
+        <p>A speech-to-text web app that turns audio from your microphone into text in real time.</p>
         <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
-        <li>View - <span><a href=" https://maemary.github.io/Speech-Detection/" target="_blank">www.domain.com</a></span></li>
-
+        <a class="project-link" href="https://maemary.github.io/Speech-Detection/" target="_blank" rel="noreferrer">Live site ↗</a>
       </div>
 
       <div class="project-card" data-category="frontend">
-        <img class="images" src="/img/whack.png"/>
+        <img class="images" src="img/whack.png" alt="Whack-A-Mole game"/>
         <h3>Whack-A-Mole</h3>
         <p>Click the moles as they pop up to score points. Built with vanilla JavaScript for DOM manipulation and game logic.</p>
         <div class="tags"><span>JavaScript</span><span>HTML</span><span>CSS</span></div>
-         <li>View - <span><a href="https://maemary.github.io/Whack-A-Mole/" target="_blank">www.Whack-A-Mole.com</a></span></li>
-
+        <a class="project-link" href="https://maemary.github.io/Whack-A-Mole/" target="_blank" rel="noreferrer">Live site ↗</a>
       </div>
 
     </div>
@@ -161,22 +165,19 @@
   <div class="container">
     <h2>Data <span>Analysis</span></h2>
     <div class="chart-grid">
-<div class="chart-card">
-      <h3>Adventure Work Sales</h3>
-      <p>Sales report built using Power BI</p>
-        <img src="/img/Screenshot (13).png" alt=""/>
+      <div class="chart-card">
+        <h3>Adventure Works Sales</h3>
+        <p>Sales report built with Power BI</p>
+        <img src="img/Screenshot (13).png" alt="Adventure Works sales report in Power BI"/>
+      </div>
+      <div class="chart-card">
+        <h3>Adventure Works Purchases</h3>
+        <p>Charts showing Adventure Works purchases</p>
+        <img src="img/Screenshot 2026-06-12 202627.png" alt="Adventure Works purchases charts"/>
+      </div>
     </div>
-    <div class="chart-card">
-      <h3>Adventure Works Purchases</h3>
-      <p>Charts showing adventure works purchases</p>
-        <img src="/img/Screenshot 2026-06-12 202627.png" alt=""/>
-    </div>
-    </div>
-    
   </div>
 </section>
-
-
 
 <!-- CONTACT -->
 <section id="contact" class="contact">
@@ -185,14 +186,9 @@
     <p class="about-text">Open to fullstack and data analyst roles, freelance work, or collaborations. Reach out below.</p>
     <div class="links">
       <a href="mailto:oduyemariam@gmail.com"><i class="uil uil-envelope-edit contact-card-icon"></i>  oduyemariam@gmail.com</a>
-      <a href="https://www.linkedin.com/in/mariam-oduye-830911239/" target="_blank"> <i class="uil uil-linkedin"></i>  LinkedIn
-      </a>
-      <a href="https://github.com/Maemary" target="_blank"><i class="uil uil-github"></i>  GitHub</a>
-          
-      <a href="https://www.freecodecamp.org/maemary12" target="_blank"><i class="fab fa-free-code-camp fa-fw"></i>  FreeCodeCamp
-             </a>
-
-       
+      <a href="https://www.linkedin.com/in/mariam-oduye-830911239/" target="_blank" rel="noreferrer"><i class="uil uil-linkedin"></i>  LinkedIn</a>
+      <a href="https://github.com/Maemary" target="_blank" rel="noreferrer"><i class="uil uil-github"></i>  GitHub</a>
+      <a href="https://www.freecodecamp.org/maemary12" target="_blank" rel="noreferrer"><i class="fab fa-free-code-camp fa-fw"></i>  FreeCodeCamp</a>
     </div>
   </div>
 </section>
@@ -201,9 +197,6 @@
  © 2026 Mariam Oduye. Designed and developed with HTML, CSS, and JavaScript.
 </footer>
 
-
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.0/chart.umd.min.js"></script>
 <script src="script.js"></script>
 </body>
 </html>
